@@ -3,7 +3,6 @@
 
 let font;
 let typetest
-let textTexture;
 
 
 let points;
