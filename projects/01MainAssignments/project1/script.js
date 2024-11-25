@@ -1,4 +1,4 @@
-// mousebased text transformation working in x,y,z
+// TYPO mousebased text transformation working in x,y,z
 
 
 let font;

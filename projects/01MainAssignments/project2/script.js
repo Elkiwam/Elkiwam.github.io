@@ -1,4 +1,4 @@
-//pixel snowman working state, image shifted
+// TYPO pixel snowman working state, image shifted
 
 let font;
 let typetest
