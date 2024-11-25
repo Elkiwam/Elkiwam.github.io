@@ -1,12 +1,10 @@
 {
-    "name": "Max Muster",
-    "thumbnailExtension": "png",
-    "projects": [ 
-        {
-        "folder" : "01MainAssignments",
-        "projectNumber":"2"
-        }
+  "name": "Timon Rimann",
+  "thumbnailExtension": "png",
+  "projects": [
+    {
+      "folder": "01MainAssignments",
+      "projectNumber": "2"
+    }
   ]
 }
-  
-
