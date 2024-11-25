@@ -12,7 +12,7 @@ let bounds;
 
 function preload() {
 	font = loadFont('Fonts/S_S_Metroviation_Five.otf');
-	typetest = loadImage('Images/snowman2.png')
+	//typetest = loadImage('Images/snowman2.png')
 }
 
 function setup() {
