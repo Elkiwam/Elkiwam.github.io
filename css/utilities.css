@@ -22,13 +22,13 @@ h2::selection {
 .header-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   margin-top: 2rem;
   padding: 2rem;
 }
 
-.header-container > div {
+.header-container>div {
   margin-top: 1rem;
 }
 
