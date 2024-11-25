@@ -1,8 +1,5 @@
 // TYPO mousebased text transformation working in x,y,z
 
-
-
-
 let points;
 let bounds;
 
@@ -16,7 +13,7 @@ function setup() {
 	createCanvas(windowWidth, windowHeight, WEBGL);
 	textFont(font);
 	noStroke()
-	textAlign(CENTER, CENTER);
+	//textAlign(CENTER, CENTER);
 
 	points = font.textToPoints("NEON-NOISE", 0, 0, 10, {
 		sampleFactor: 40, // we can add more or less points here.
