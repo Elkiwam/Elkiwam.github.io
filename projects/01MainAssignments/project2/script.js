@@ -18,9 +18,12 @@ function setup() {
 }
 
 function draw() {
-	background(200)
+	background(255)
 
 
+
+	translate(-70, 0)
+	scale(1.03)
 	/*trying the text
 	fill(0);
 	textSize(100);
@@ -28,7 +31,7 @@ function draw() {
 */
 
 	push()
-	let tiles = constrain(map(mouseX, 0, width, 10, 300), 10, 300);
+	let tiles = constrain(map(mouseX, 0, width, 10, 250), 10, 250);
 	console.log(tiles)
 
 
@@ -37,13 +40,13 @@ function draw() {
 
 
 			let tileSize = width / tiles;
-			let c = typetest.get(floor(x * tileSize), floor(y * tileSize));
+			let c = typetest.get(floor(x * tileSize - 140), floor(y * tileSize + 40));
 			let b = map(brightness(c), 0, 20, 1, 0);
 			//let zShift = 500
 			//let z = map(b, 0, 1, -100, zShift)
 
 
-			fill(50, 50, 200)
+			fill(0)
 			noStroke()
 			//ellipse(x * tileSize, y * tileSize, 10, 10);
 			push()
