@@ -3,6 +3,8 @@
 let currentBG;
 let buttonClick = false;
 let turnbuttonClick = false;
+//let editibleString = "TYPE";
+let editibleString = ["TYPE"];
 
 let R;
 let G;
@@ -46,13 +48,11 @@ function draw() {
 			strokeWeight(2)
 			textSize(25)
 			textFont(Istok)
+			editibleString = "TYPE"
 
-			console.log('what')
+			//console.log('what')
 		}
 	}
-
-
-
 
 	//Textcolor effect
 	if (mouseX > 150 && mouseX < 210) {
@@ -69,9 +69,7 @@ function draw() {
 		//background(mouseY / 2, mouseY / 3, 255)
 		currentBG = color(mouseY / 2, mouseY / 3, 255)
 		background(currentBG);
-
 	}
-
 
 	//Font changing effect
 	if (mouseX > 220 && mouseX < 280 && mouseY > 110 && mouseY < 330) {
@@ -120,7 +118,8 @@ function draw() {
 	}
 
 	//textfield
-	text('TEXT', width / 2 + 100, height / 2 - 50);
+	//text('TEXT', width / 2 + 100, height / 2 - 50);
+	text(editibleString, width / 2 + 100, height / 2 - 50);
 	pop()
 
 	//show sliders
@@ -133,9 +132,7 @@ function draw() {
 	//show buttons
 	button(450, 115)
 	followButton(40, 40)
-	console.log(buttonClick)
-
-
+	//console.log(buttonClick)
 
 }
 
@@ -152,8 +149,6 @@ function slider(x) {
 	}
 	pop();
 }
-
-
 
 //experiment with reset button or toggle for stroke color b/w
 function button(x, y) {
@@ -185,14 +180,21 @@ function followButton(x, y) {
 	pop()
 }
 
+function doubleClicked() { turnbuttonClick = !turnbuttonClick; }
 
 function mousePressed() {
-	if (mouseX > 430 && mouseX < 470 && mouseY > 95 && mouseY < 135) {
-		buttonClick = !buttonClick;
-	} else {
-		turnbuttonClick = !turnbuttonClick;
+	if (mouseX > 40 - 15 && mouseX < 40 + 15 && mouseY > 40 - 15 && mouseY < 40 + 15) {
+		turnbuttonClick = !turnbuttonClick
 	}
+	buttonClick = !buttonClick;
 }
 
-
-
+function keyTyped() {
+	//background(0)
+	editibleString = editibleString + key;
+	editibleString = editibleString.slice(1, editibleString.length)
+	if (editibleString.length > 5) {
+		//editibleString.slice(0, 5)
+		console.log(editibleString)
+	}
+}
