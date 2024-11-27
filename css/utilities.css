@@ -22,7 +22,7 @@ h2::selection {
 .header-container {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   justify-content: center;
   margin-top: 2rem;
   padding: 2rem;
@@ -33,7 +33,7 @@ h2::selection {
 }
 
 .content-text {
-  text-align: left;
+  text-align: center;
   margin: 1.5rem 0;
 }
 
