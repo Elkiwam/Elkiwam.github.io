@@ -14,7 +14,6 @@ function setup() {
 	textAlign(CENTER, CENTER);
 	textFont(font);
 
-
 }
 
 function draw() {
@@ -25,7 +24,6 @@ function draw() {
 	//stored values
 	//textSize(currentTextSize);
 	//fill(currentTextColor);
-
 
 	//background effect
 	if (mouseX > 80 && mouseX < 140) {
@@ -58,9 +56,6 @@ function draw() {
 		//fill(r, g, b)
 	}
 
-
-
-
 	//textfield
 	text('text', width / 2, height / 2);
 	pop()
@@ -71,10 +66,7 @@ function draw() {
 	slider(240)
 	slider(310)
 
-
 }
-
-
 
 function slider(x) {
 	fill(255);
