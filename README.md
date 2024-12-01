@@ -25,6 +25,10 @@ Project4: Makeshift type editor controlled by sliders and clicks. The letters ar
 
 
 
+
+
+
+
 Please refer to the following instructions in order to set up your portfolio page for the Creative Coding course.
 
 ## Github Pages 
