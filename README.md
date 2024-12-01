@@ -11,7 +11,6 @@ Interactive Typography: Produce interactive typography that responds to some inp
 
 Unconventional Micro-Interaction: Microinteractions are small moments where the user and design interact, such as in the individual interface components. Choose a typical micro-interaction such as volume control, or colour selector, and create a playful reinterpretation.
 
-The Outcome
 
 My projects:
 
